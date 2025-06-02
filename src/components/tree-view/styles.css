@@ -1,0 +1,53 @@
+.tree-view-container {
+  max-width: 400px;
+  margin: 40px auto;
+  background: #f9f9f9;
+  border-radius: 10px;
+  padding: 24px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+.menu-list-container {
+  list-style: none;
+  padding-left: 20px;
+  margin: 0;
+}
+
+.menu-list-container li {
+  margin-bottom: 8px;
+}
+
+.menu-list-container > li > div {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+  padding: 6px 0;
+}
+
+.menu-list-container p {
+  margin: 0;
+  font-size: 1rem;
+  color: #333;
+}
+
+.menu-list-container span {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background: #e0e7ff;
+  color: #3730a3;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 24px;
+  font-weight: bold;
+  font-size: 1.1rem;
+  transition: background 0.2s, color 0.2s;
+  user-select: none;
+}
+
+.menu-list-container span:hover {
+  background: #6366f1;
+  color: #fff;
+}

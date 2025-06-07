@@ -1,0 +1,43 @@
+.tic-tac-toe-container {
+  display: inline-block;
+  margin: 40px auto;
+  padding: 24px;
+  background: #f8fafc;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.row {
+  display: flex;
+  margin-bottom: 0;
+  gap: 0;
+}
+
+.square {
+  width: 60px;
+  height: 60px;
+  background: #fff;
+  border: 2px solid #6366f1;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #3730a3;
+  cursor: pointer;
+  outline: none;
+  transition: background 0.2s, color 0.2s;
+  margin: 0;
+  padding: 0;
+  border-radius: 0;
+  box-sizing: border-box;
+}
+
+/* Merge borders so only single lines show between squares */
+.tic-tac-toe-container .row:not(:last-child) .square {
+  border-bottom: none;
+}
+.tic-tac-toe-container .row .square:not(:last-child) {
+  border-right: none;
+}
+
+.square:hover {
+  background: #e0e7ff;
+  color: #6366f1;
+}

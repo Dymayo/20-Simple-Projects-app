@@ -52,6 +52,8 @@ export default function SearchAutocomplete() {
     fetchListOfUsers();
   }, []);
 
+  console.log(error);
+
   return (
     <div className="search-autocomplete-container">
       {loading ? (

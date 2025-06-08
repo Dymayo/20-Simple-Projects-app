@@ -3,6 +3,8 @@ import "./App.css";
 import Accordion from "./components/Accordion/index";
 import ModalTest from "./components/custom-modal-popup/modal-test";
 import TabTest from "./components/custom-tabs/tab-test";
+import FeatureFlags from "./components/feature-flag";
+import FeatureFlagGlobalState from "./components/feature-flag/context";
 import GithubProfileFinder from "./components/github-profile-finder";
 import ImageSlider from "./components/image-slider";
 import LightDarkMode from "./components/light-dark-mode";
@@ -14,6 +16,7 @@ import SearchAutocomplete from "./components/search-autocomplete-with-api";
 import StarRating from "./components/star-rating";
 import TicTacToe from "./components/tic-tac-toe";
 import TreeView from "./components/tree-view";
+import UseFetchHookTest from "./components/use-fetch/test";
 // import menus from "./components/tree-view/data";
 
 function App() {
@@ -36,7 +39,11 @@ function App() {
       {/* <ModalTest /> */}
       {/* <GithubProfileFinder /> */}
       {/* <SearchAutocomplete /> */}
-      <TicTacToe />
+      {/* <TicTacToe /> */}
+      {/* <FeatureFlagGlobalState>
+        <FeatureFlags />
+      </FeatureFlagGlobalState> */}
+      <UseFetchHookTest />
     </div>
   );
 }

@@ -17,6 +17,7 @@ import StarRating from "./components/star-rating";
 import TicTacToe from "./components/tic-tac-toe";
 import TreeView from "./components/tree-view";
 import UseFetchHookTest from "./components/use-fetch/test";
+import UseOnClickOutsideTest from "./components/use-outside-click/test";
 // import menus from "./components/tree-view/data";
 
 function App() {
@@ -43,7 +44,8 @@ function App() {
       {/* <FeatureFlagGlobalState>
         <FeatureFlags />
       </FeatureFlagGlobalState> */}
-      <UseFetchHookTest />
+      {/* <UseFetchHookTest/> */}
+      <UseOnClickOutsideTest />
     </div>
   );
 }
